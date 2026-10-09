@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07182d">
+<meta name="description" content="SPARC Workshop: Frontiers in Metasurfaces and Terahertz Photonics at IIT Ropar.">
+<title>SPARC | Frontiers in Metasurfaces and Terahertz Photonics</title>
+<style>
+:root{--navy:#07182d;--navy2:#0d2947;--cyan:#64e4f4;--gold:#f6c56d;--ink:#13243a;--muted:#63748a;--paper:#f6f9fc;--line:#dce5ef;--white:#fff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit}button,a{ -webkit-tap-highlight-color:transparent}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.topline{background:#04101f;color:#c7d5e5;font-size:.82rem;padding:8px 0}.topline .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.topline a{color:var(--cyan);text-decoration:none}.nav{position:sticky;top:0;z-index:20;background:rgba(7,24,45,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);color:#fff}.navinner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}.brandmark{width:43px;height:43px;border:1px solid rgba(100,228,244,.65);border-radius:12px;display:grid;place-items:center;color:var(--cyan);font-weight:900;letter-spacing:-2px;background:linear-gradient(145deg,rgba(100,228,244,.12),rgba(246,197,109,.06))}.brand strong{display:block;font-size:1.02rem;line-height:1.25;letter-spacing:.04em}.brand small{display:block;color:#aabbd0;font-size:.73rem;margin-top:3px}.navlinks{display:flex;align-items:center;gap:21px}.navlinks a{text-decoration:none;font-size:.88rem;color:#dbe5f0;white-space:nowrap}.navlinks a:hover{color:var(--cyan)}.navlinks .navcta{padding:10px 15px;background:var(--gold);color:var(--navy);border-radius:9px;font-weight:800}.menu{display:none;background:none;color:#fff;border:1px solid #52647a;border-radius:9px;padding:8px 12px;font-size:1.1rem}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 38%,rgba(25,120,161,.3),transparent 37%),radial-gradient(ellipse at 15% 100%,rgba(21,85,136,.35),transparent 38%),linear-gradient(125deg,#07182d 0%,#0b2440 58%,#102f50 100%);color:#fff;padding:86px 0 76px;isolation:isolate}.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(90deg,transparent,#000 70%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(100,228,244,.35);border-radius:100px;padding:7px 12px;color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 14px var(--gold)}h1{font-size:clamp(2.55rem,5vw,4.7rem);line-height:1.04;letter-spacing:-.055em;margin:23px 0 18px;max-width:760px}h1 span{color:var(--cyan)}.hero p{font-size:1.1rem;color:#c9d8e7;max-width:650px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:10px;font-weight:800;text-decoration:none;border:1px solid transparent;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--gold);color:var(--navy)}.btn-secondary{border-color:rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.04)}.hero-note{margin-top:22px!important;font-size:.84rem!important;color:#9eb2c8!important}.hero-art{min-height:350px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:min(34vw,350px);aspect-ratio:1;border:1px solid rgba(100,228,244,.48);border-radius:50%;box-shadow:0 0 70px rgba(100,228,244,.09),inset 0 0 55px rgba(100,228,244,.06)}.orb:before,.orb:after{content:"";position:absolute;inset:12%;border:1px solid rgba(246,197,109,.55);border-radius:50%;transform:rotate(55deg) scaleX(.44)}.orb:after{transform:rotate(-55deg) scaleX(.44);border-color:rgba(100,228,244,.55)}.core{width:90px;height:90px;border-radius:22px;transform:rotate(45deg);background:linear-gradient(135deg,rgba(100,228,244,.85),rgba(246,197,109,.75));box-shadow:0 0 65px rgba(100,228,244,.3);display:grid;place-items:center}.core span{transform:rotate(-45deg);font-weight:900;color:#08203a;font-size:1.5rem}.orbit-label{position:absolute;background:rgba(7,24,45,.8);border:1px solid rgba(255,255,255,.15);padding:8px 12px;border-radius:9px;color:#dcecf8;font-size:.78rem;backdrop-filter:blur(8px)}.label-a{top:16%;left:3%}.label-b{right:0;top:35%}.label-c{bottom:14%;left:12%}.stats{background:#fff;border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:24px 20px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{display:block;color:var(--navy);font-size:1rem}.stat span{display:block;color:var(--muted);font-size:.83rem;margin-top:4px}
+section{padding:82px 0}.section-soft{background:var(--paper)}.section-head{max-width:760px;margin-bottom:36px}.kicker{font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:#168da5}.section-head h2{font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-.045em;line-height:1.1;color:var(--navy);margin:12px 0}.section-head p{color:var(--muted);margin:0;font-size:1.02rem}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:start}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feature{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}.feature-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#e6f9fc;color:#087e94;font-size:1.2rem;margin-bottom:14px}.feature h3{margin:0 0 7px;font-size:1rem;color:var(--navy)}.feature p{margin:0;color:var(--muted);font-size:.9rem}.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.topic{border-radius:16px;padding:24px;background:#fff;border:1px solid var(--line);min-height:178px;position:relative;overflow:hidden}.topic:after{content:"";position:absolute;width:90px;height:90px;border:1px solid #d6edf2;border-radius:50%;right:-35px;bottom:-35px}.topic .num{font-size:.75rem;color:#1596aa;font-weight:900;letter-spacing:.12em}.topic h3{color:var(--navy);margin:15px 0 7px;font-size:1.08rem}.topic p{color:var(--muted);font-size:.9rem;margin:0;max-width:300px}
+.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.audience{padding:25px;border-radius:16px;background:#fff;border:1px solid var(--line)}.audience h3{margin:0 0 10px;color:var(--navy)}.audience p{color:var(--muted);font-size:.91rem}.audience ul{padding-left:18px;margin-bottom:0;color:#344a61;font-size:.9rem}.audience li{margin:7px 0}
+.speaker-note{border:1px dashed #b7c8d9;background:#fff;border-radius:16px;padding:30px;display:flex;align-items:flex-start;gap:18px}.speaker-icon{width:52px;height:52px;border-radius:15px;background:#e7f9fc;color:#087e94;display:grid;place-items:center;flex:none;font-size:1.35rem}.speaker-note h3{margin:0 0 7px;color:var(--navy)}.speaker-note p{margin:0;color:var(--muted)}.speaker-note small{display:block;margin-top:10px;color:#8b5b12;font-weight:700}
+.schedule{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.schedule-row{display:grid;grid-template-columns:180px 1fr 1fr;gap:18px;padding:17px 22px;border-bottom:1px solid var(--line);align-items:center}.schedule-row:last-child{border:0}.schedule-row.header{background:var(--navy);color:#fff;font-weight:800;font-size:.85rem}.schedule-row:not(.header) .time{font-weight:800;color:#12899e}.schedule-row strong{color:var(--navy)}.schedule-row span{color:var(--muted);font-size:.9rem}.schedule-disclaimer{font-size:.84rem;color:var(--muted);margin-top:12px}
+.registration{background:linear-gradient(120deg,#081a31,#103452);color:#fff}.registration .section-head h2{color:#fff}.registration .section-head p{color:#c1d2e2}.reg-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}.reg-card{border:1px solid rgba(255,255,255,.17);border-radius:16px;padding:25px;background:rgba(255,255,255,.05)}.reg-card h3{margin:0 0 12px}.reg-card p,.reg-card li{color:#c6d6e6;font-size:.92rem}.reg-card ul{padding-left:19px}.status{display:inline-block;padding:6px 10px;background:rgba(246,197,109,.13);border:1px solid rgba(246,197,109,.4);border-radius:8px;color:var(--gold);font-size:.78rem;font-weight:800}.fee-list{list-style:none;padding:0!important;margin:15px 0}.fee-list li{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12)}.fee-list li span:last-child{font-weight:800;color:#fff}
+.faq-list{max-width:850px}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;display:flex;justify-content:space-between;gap:20px;text-align:left;background:none;border:0;padding:19px 0;font:inherit;font-weight:800;color:var(--navy);cursor:pointer}.faq-q span:last-child{color:#168da5;font-size:1.25rem}.faq-a{display:none;color:var(--muted);padding:0 30px 18px 0;font-size:.93rem}.faq-item.open .faq-a{display:block}.faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{padding:25px;border:1px solid var(--line);border-radius:16px}.contact-card h3{margin-top:0;color:var(--navy)}.contact-card p{color:var(--muted)}.contact-card a{color:#0c879c}.footer{background:#04101f;color:#b7c8d9;padding:34px 0}.footer-row{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}.footer strong{color:#fff}.footer small{display:block;margin-top:8px;max-width:650px}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer a{color:#dce7f1;text-decoration:none;font-size:.88rem}.notice{font-size:.84rem;color:var(--muted);margin-top:18px}.backtop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;text-decoration:none;font-weight:900;box-shadow:0 8px 30px #07182d2c}
+@media(max-width:980px){.navlinks{gap:13px}.navlinks a{font-size:.81rem}.hero-grid{gap:22px}.hero-art{min-height:290px}.topic-grid{grid-template-columns:repeat(2,1fr)}.schedule-row{grid-template-columns:145px 1fr 1fr}}
+@media(max-width:760px){.container{width:min(100% - 30px,var(--max))}.topline .container{font-size:.76rem}.navinner{min-height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:18px 22px 22px;flex-direction:column;align-items:stretch;border-bottom:1px solid #34475d}.navlinks.show{display:flex}.navlinks a{font-size:.95rem;padding:7px 0}.navlinks .navcta{text-align:center;padding:11px}.hero{padding:62px 0 55px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:260px;max-width:480px;width:100%;margin:auto}.orb{width:240px}.label-a{left:2%}.label-b{right:1%}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:18px 12px;border-bottom:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat:nth-child(3){padding-left:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.stat strong{font-size:.92rem}.stat span{font-size:.78rem}section{padding:60px 0}.about-grid,.reg-grid,.contact-grid{grid-template-columns:1fr;gap:24px}.feature-grid{grid-template-columns:1fr 1fr}.topic-grid,.audience-grid{grid-template-columns:1fr}.topic{min-height:0}.schedule-row{grid-template-columns:1fr;gap:4px;padding:16px}.schedule-row.header{display:none}.schedule-row .time{font-size:.83rem}.schedule-row span{font-size:.88rem}.speaker-note{padding:22px}.footer-row{flex-direction:column}}
+@media(max-width:420px){.feature-grid{grid-template-columns:1fr}.brand small{font-size:.66rem}.brand strong{font-size:.91rem}.hero-art{min-height:225px}.orb{width:205px}.orbit-label{font-size:.7rem}.label-a{top:8%}.label-b{top:32%}.label-c{bottom:6%}}
+</style>
+</head>
+<body id="top">
+<div class="topline"><div class="container"><span>Department of Physics · Indian Institute of Technology Ropar</span><span>Workshop edition details <a href="#registration">to be announced</a></span></div></div>
+<header class="nav">
+  <div class="container navinner">
+    <a class="brand" href="#top" aria-label="SPARC workshop home"><span class="brandmark">S<span style="color:var(--gold)">P</span></span><span><strong>SPARC WORKSHOP</strong><small>Frontiers in Metasurfaces and Terahertz Photonics</small></span></a>
+    <button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">About</a><a href="#topics">Topics</a><a href="#speakers">Speakers</a><a href="#programme">Programme</a><a href="#participants">Participants</a><a href="#faq">FAQs</a><a class="navcta" href="#registration">Registration ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> SPARC · Research Workshop</div>
+      <h1>Frontiers in <span>Metasurfaces</span> and Terahertz Photonics</h1>
+      <p>A research-focused platform for exploring next-generation photonic materials, engineered electromagnetic surfaces, and terahertz technologies—bringing together students, researchers, faculty, and industry.</p>
+      <div class="actions"><a class="btn btn-primary" href="#registration">Registration information <span>↗</span></a><a class="btn btn-secondary" href="#programme">Explore the programme ↓</a></div>
+      <p class="hero-note">Indian Institute of Technology Ropar · Rupnagar, Punjab, India<br>Dates, venue details, speakers, and fees for this edition will be published after confirmation.</p>
+    </div>
+    <div class="hero-art" aria-label="Abstract illustration representing electromagnetic waves and metasurfaces">
+      <div class="orb"></div><div class="core"><span>THz</span></div>
+      <div class="orbit-label label-a">Meta-devices</div><div class="orbit-label label-b">Terahertz waves</div><div class="orbit-label label-c">Photonics research</div>
+    </div>
+  </div>
+</section>
+<div class="stats"><div class="container stats-grid">
+  <div class="stat"><strong>Expert-led learning</strong><span>Keynotes and invited talks</span></div>
+  <div class="stat"><strong>Hands-on exposure</strong><span>Training and demonstrations*</span></div>
+  <div class="stat"><strong>Research exchange</strong><span>Discussion and collaboration</span></div>
+  <div class="stat"><strong>Multiple audiences</strong><span>Students to industry</span></div>
+</div></div>
+<section id="about">
+  <div class="container about-grid">
+    <div><div class="section-head"><div class="kicker">About the workshop</div><h2>Where fundamental research meets emerging technology.</h2><p>SPARC is designed to encourage knowledge exchange across the rapidly evolving fields of metasurfaces, metamaterials, and terahertz photonics.</p></div>
+      <p style="color:var(--muted)">The workshop will provide a forum to discuss new concepts, experimental and computational methods, and potential applications of engineered photonic structures. Participants will be able to learn from experts, explore current research directions, and connect with peers across academic and industrial communities.</p>
+      <p class="notice">*Specific hands-on sessions, laboratory visits, and software training should be listed only after confirmation by the organizing committee.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature"><div class="feature-icon">✦</div><h3>Research insights</h3><p>Learn about current directions in metasurface design and terahertz science.</p></article>
+      <article class="feature"><div class="feature-icon">⌘</div><h3>Technical learning</h3><p>Explore concepts, tools, modelling approaches, and device demonstrations.</p></article>
+      <article class="feature"><div class="feature-icon">◎</div><h3>Expert interaction</h3><p>Engage with speakers and discuss challenges and opportunities.</p></article>
+      <article class="feature"><div class="feature-icon">↗</div><h3>Collaboration</h3><p>Build connections across institutions, disciplines, and industry.</p></article>
+    </div>
+  </div>
+</section>
+<section id="topics" class="section-soft">
+  <div class="container"><div class="section-head"><div class="kicker">Technical themes</div><h2>Topics at the frontier of photonics.</h2><p>The following topics are suggested from the workshop theme. The final scope can be refined by the organizers.</p></div>
+    <div class="topic-grid">
+      <article class="topic"><span class="num">01 / MATERIALS</span><h3>Metamaterials & Metasurfaces</h3><p>Engineered electromagnetic responses, resonances, and wavefront control.</p></article>
+      <article class="topic"><span class="num">02 / SPECTRUM</span><h3>Mid-IR & Terahertz Photonics</h3><p>Generation, manipulation, detection, and applications of THz waves.</p></article>
+      <article class="topic"><span class="num">03 / DEVICES</span><h3>Flat Optics & Meta-devices</h3><p>Compact optical components, beam shaping, lenses, and functional surfaces.</p></article>
+      <article class="topic"><span class="num">04 / PHYSICS</span><h3>Plasmonics & Light–Matter Interaction</h3><p>Enhanced field confinement and light interaction with structured materials.</p></article>
+      <article class="topic"><span class="num">05 / SYSTEMS</span><h3>Integrated & Silicon Photonics</h3><p>Photonic platforms, guided-wave devices, and integration strategies.</p></article>
+      <article class="topic"><span class="num">06 / FRONTIERS</span><h3>Active, Tunable & Chiral Structures</h3><p>Reconfigurable responses, polarization control, and emerging applications.</p></article>
+    </div>
+  </div>
+</section>
+<section id="speakers">
+  <div class="container"><div class="section-head"><div class="kicker">Keynote & invited experts</div><h2>Meet the speakers.</h2><p>Speaker profiles will be added after the organizing committee confirms the line-up for this edition.</p></div>
+    <div class="speaker-note"><div class="speaker-icon">✧</div><div><h3>Keynote speakers, eminent speakers & industry experts</h3><p>Each speaker card will include a professional photograph, name, designation, institution or company, talk title, and a short biography.</p><small>Speaker names and affiliations are intentionally not pre-filled to avoid presenting a previous edition’s speakers as confirmed for this edition.</small></div></div>
+  </div>
+</section>
+<section id="programme" class="section-soft">
+  <div class="container"><div class="section-head"><div class="kicker">Workshop agenda</div><h2>Programme at a glance.</h2><p>The detailed day-wise timetable will be published once dates and sessions are finalized.</p></div>
+    <div class="schedule" role="table" aria-label="Provisional workshop programme">
+      <div class="schedule-row header" role="row"><span>Session</span><span>Activity</span><span>Details</span></div>
+      <div class="schedule-row" role="row"><span class="time">Session 01</span><strong>Registration & inauguration</strong><span>Welcome address and workshop overview</span></div>
+      <div class="schedule-row" role="row"><span class="time">Session 02</span><strong>Keynote addresses</strong><span>Research perspectives from invited experts</span></div>
+      <div class="schedule-row" role="row"><span class="time">Session 03</span><strong>Technical talks</strong><span>Metasurfaces, metamaterials, and THz photonics</span></div>
+      <div class="schedule-row" role="row"><span class="time">Session 04</span><strong>Hands-on / demonstration</strong><span>Subject to organizer confirmation</span></div>
+      <div class="schedule-row" role="row"><span class="time">Session 05</span><strong>Discussion & networking</strong><span>Questions, collaboration, and closing remarks</span></div>
+    </div>
+    <p class="schedule-disclaimer">This is a programme outline, not a confirmed timetable. Exact dates, times, speakers, breaks, and session formats will be announced officially.</p>
+  </div>
+</section>
+<section id="participants">
+  <div class="container"><div class="section-head"><div class="kicker">Who should attend?</div><h2>Designed for the research community.</h2><p>Content on this page can be expanded with eligibility rules and audience-specific benefits once registration opens.</p></div>
+    <div class="audience-grid">
+      <article class="audience"><h3>Students & Research Scholars</h3><p>Build a foundation and explore current research.</p><ul><li>UG, PG, and PhD participants, subject to eligibility</li><li>Technical talks and research exposure</li><li>Hands-on opportunities, if scheduled</li><li>Certificate conditions to be announced</li></ul></article>
+      <article class="audience"><h3>Faculty & Academicians</h3><p>Exchange ideas and identify research synergies.</p><ul><li>Current developments and research methods</li><li>Discussion with experts and peers</li><li>Potential academic collaborations</li><li>Institutional participation information</li></ul></article>
+      <article class="audience"><h3>Industry Professionals</h3><p>Connect research with real-world challenges.</p><ul><li>Emerging photonics and device technologies</li><li>Academic–industry networking</li><li>Potential R&D and technology partnerships</li><li>Sponsorship enquiries, if applicable</li></ul></article>
+    </div>
+  </div>
+</section>
+<section id="registration" class="registration">
+  <div class="container"><div class="section-head"><div class="kicker" style="color:var(--gold)">Registration</div><h2>Plan your participation.</h2><p>Registration links, fees, payment instructions, and deadlines will be added after approval by the organizers.</p></div>
+    <div class="reg-grid">
+      <div class="reg-card"><span class="status">DETAILS TO BE ANNOUNCED</span><h3 style="margin-top:16px">Registration & fees</h3><p>The final fee structure should clearly state each participant category and what the fee includes.</p>
+        <ul class="fee-list"><li><span>UG / PG students</span><span>To be confirmed</span></li><li><span>PhD / Research scholars</span><span>To be confirmed</span></li><li><span>Faculty / Academicians</span><span>To be confirmed</span></li><li><span>Industry participants</span><span>To be confirmed</span></li><li><span>International participants</span><span>If applicable</span></li></ul>
+        <p>Do not make payments until the official registration link and payment details are published.</p>
+      </div>
+      <div class="reg-card"><h3>Before you register</h3><p>Make sure the final registration page provides:</p><ul><li>Eligibility and seat availability</li><li>Registration deadline and confirmation process</li><li>Official payment method and receipt details</li><li>Meals and accommodation inclusions</li><li>Cancellation and refund policy</li><li>Certificate eligibility and distribution</li></ul><a class="btn btn-primary" href="#contact">Ask the organizers <span>↗</span></a></div>
+    </div>
+  </div>
+</section>
+<section id="travel" class="section-soft">
+  <div class="container"><div class="section-head"><div class="kicker">Visit IIT Ropar</div><h2>Travel & accommodation.</h2><p>Practical information for participants travelling to Rupnagar, Punjab.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>Venue</h3><p><strong>Indian Institute of Technology Ropar</strong><br>Rupnagar, Punjab, India</p><p>The exact building, room, campus entry instructions, and map link should be added after confirmation.</p><a href="https://www.iitrpr.ac.in/" target="_blank" rel="noopener">Official IIT Ropar website ↗</a></div>
+      <div class="contact-card"><h3>Accommodation & transport</h3><p>Details about campus accommodation, nearby hotels, local transport, meals, and travel support will be published by the organizing team.</p><p><strong>Important:</strong> Accommodation availability and charges should be confirmed before booking.</p></div>
+    </div>
+  </div>
+</section>
+<section id="faq">
+  <div class="container"><div class="section-head"><div class="kicker">Need to know</div><h2>Frequently asked questions.</h2><p>These draft answers should be reviewed by the organizing committee before publication.</p></div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Who can participate in the workshop?</span><span>＋</span></button><div class="faq-a">Students, research scholars, faculty, researchers, and industry professionals interested in metasurfaces and terahertz photonics are the intended audiences. Final eligibility will be announced by the organizers.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>When and where will the workshop take place?</span><span>＋</span></button><div class="faq-a">The workshop is associated with IIT Ropar. Dates, exact venue, and details for the current edition must be confirmed and published by the organizing committee.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is the registration fee?</span><span>＋</span></button><div class="faq-a">The fee has not been entered in this draft. Refer only to the final official registration announcement for category-wise fees and payment instructions.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Will participants receive a certificate?</span><span>＋</span></button><div class="faq-a">Certificate availability, attendance requirements, and distribution method must be confirmed by the organizers.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Will accommodation be available?</span><span>＋</span></button><div class="faq-a">Accommodation arrangements, eligibility, charges, and booking procedures will be announced separately. Do not assume accommodation is included in the registration fee.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How can I contact the organizing team?</span><span>＋</span></button><div class="faq-a">Use the official workshop contact details once provided. The generic laboratory contact shown in public institutional sources should not be treated as the workshop registration contact without confirmation.</div></div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section-soft">
+  <div class="container"><div class="section-head"><div class="kicker">Get in touch</div><h2>Contact the organizing team.</h2><p>Replace the placeholders below with the official workshop contact information before launch.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>Workshop enquiries</h3><p><strong>SPARC Workshop: FiMTP</strong><br>Department of Physics<br>Indian Institute of Technology Ropar<br>Rupnagar, Punjab, India</p><p>Email: <a href="mailto:ADD-OFFICIAL-WORKSHOP-EMAIL">Add official workshop email</a><br>Phone: Add official contact number</p></div>
+      <div class="contact-card"><h3>For organizing team</h3><p>Before publishing, add the names and roles of the workshop chair, conveners, registration coordinator, travel/accommodation coordinator, and technical support contact.</p><p>Consider using a dedicated workshop email address so registration queries can be tracked centrally.</p></div>
+    </div>
+    <p class="notice">Draft website template. This is not an official IIT Ropar publication. Confirm all content, institutional branding, dates, fees, speakers, and contact information with the authorized organizers before publishing.</p>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-row"><div><strong>SPARC · Frontiers in Metasurfaces and Terahertz Photonics</strong><small>Workshop website draft · Indian Institute of Technology Ropar<br>Use only after review and approval by the organizing committee.</small></div><div class="footer-links"><a href="#about">About</a><a href="#speakers">Speakers</a><a href="#registration">Registration</a><a href="#contact">Contact</a><a href="#top">Back to top ↑</a></div></div></footer>
+<a class="backtop" href="#top" aria-label="Back to top">↑</a>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('show');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('show');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.closest('.faq-item');const open=item.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));}));
+</script>
+</body>
+</html>
